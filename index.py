@@ -32,7 +32,7 @@ print("""
     <head>
         <title>crnlpanic - Techtalks and other stuff maybe</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet" type="text/css">
         <link href="style.css" type="text/css" rel="stylesheet" />
         <meta property="og:title" content="crnlpanic" />
         <meta property="og:url" content="http://%(http_host)s%(request_uri)s" />
