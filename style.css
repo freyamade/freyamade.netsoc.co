@@ -55,8 +55,9 @@ body {
 }
 
 .card img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border: 1px solid #d4def622;
 }
 
 @media only screen and (min-width: 768px) {
