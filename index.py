@@ -1,15 +1,31 @@
 #!/usr/bin/env python3
 import cgi
 from cgitb import enable
-# enable()  # Traceback. Comment out in production
+enable()  # Traceback. Comment out in production
 
+import json
 import os
 
 # Response Headers
 print('Content-Type: text/html')
 print()  # End of headers
+
+# Use os and json to populate the techtalks section
+talks = []
+for name in sorted(os.listdir('techtalks')):
+    path = 'techtalks/%s' % name
+    if os.path.isdir(path):
+        # Assume that it is a techtalk
+        # Open the meta.json
+        with open('%s/meta.json' % path) as f:
+            meta = json.load(f)
+        talks.append("""<a href="/%(path)s/" target="_blank" class="card">
+                            <h2>%(title)s</h2>
+                            <img src="/%(path)s/title.png" alt="%(title)s title slide" />
+                            <p><em>%(quote)s</em></p>
+                        </a>""" % ({'path': path, **meta}))
+
 # Response Body
-# Percentages are double commented because of how the '%' formatting works
 print("""
 <!DOCTYPE html>
 <html>
@@ -36,27 +52,14 @@ print("""
             <div class="content">
                 <div class="title">techtalks</div>
                 <div class="cards">
-                    <a class="card" href="/techtalks/css/" target="_blank">
-                        <h2>CSS</h2>
-                        <img src="https://raw.githubusercontent.com/crnbrdrck/netsoc-css-talk/master/title.png" alt="css title slide" />
-                        <p><em>How to style your own website easily by using CSS other people spend ages making.</em></p>
-                    </a>
-                    <a class="card" href="/techtalks/languages/" target="_blank">
-                        <h2>Ruby / Crystal</h2>
-                        <img src="https://raw.githubusercontent.com/crnbrdrck/netsoc-languages-talk/master/title.png" alt="ruby / crystal title slide" />
-                        <p><em>Syntactic Sugar / Syntactic Sugar with speed</em></p>
-                    </a>
-                    <a class="card" href="/techtalks/docker/" target="_blank">
-                        <h2>Docker</h2>
-                        <img src="https://raw.githubusercontent.com/crnbrdrck/netsoc-docker-talk/master/title.png" alt="docker title slide" />
-                        <p><em>Containers with a cute whale mascot</em></p>
-                    </a>
+                    %(cards)s
                 </div>
             </div>
         </div>
     </body>
 </html>
 """ % ({
-    'http_host': os.environ['HTTP_HOST'],
-    'request_uri': os.environ['REQUEST_URI']
+    'http_host': os.environ.get('HTTP_HOST', ''),
+    'request_uri': os.environ.get('REQUEST_URI', ''),
+    'cards': ''.join(talks),
 }))
