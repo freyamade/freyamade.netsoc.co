@@ -19,6 +19,14 @@ body {
     vertical-align: middle;
 }
 
+.social-link {
+    color: #d4def6;
+    text-decoration: underline solid #0046cc;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
 .content {
     text-align: center;
 }

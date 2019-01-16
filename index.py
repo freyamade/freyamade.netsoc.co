@@ -55,6 +55,7 @@ print("""
                     %(cards)s
                 </div>
             </div>
+            <a href="https://github.com/crnbrdrck/" class="social-link" target="blank">my github</a>
         </div>
     </body>
 </html>
