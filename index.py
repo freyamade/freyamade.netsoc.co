@@ -19,6 +19,8 @@ for name in sorted(os.listdir('techtalks')):
         # Open the meta.json
         with open('%s/meta.json' % path) as f:
             meta = json.load(f)
+            for k, v in meta.items():
+                meta[k] = str(v).lower()
         talks.append("""<a href="/%(path)s/" target="_blank" class="card">
                             <h2>%(title)s</h2>
                             <img src="/%(path)s/title.png" alt="%(title)s title slide" />
@@ -30,7 +32,7 @@ print("""
 <!DOCTYPE html>
 <html>
     <head>
-        <title>crnlpanic - Techtalks and other stuff maybe</title>
+        <title>crnlpanic - techtalks and other stuff maybe</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="//fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet" type="text/css">
         <link href="style.css" type="text/css" rel="stylesheet" />
@@ -41,10 +43,10 @@ print("""
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="crnlpanic.netsoc.co" />
         <meta property="fb:admins" content="1385961037" />
-        <meta property="og:description" content="crnbrdrck's Netsoc Homepage - Techtalks and other stuff too maybe" />
+        <meta property="og:description" content="crnbrdrck's netsoc homepage - techtalks and other stuff too maybe" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@crnbrdrck" />
-        <meta name="twitter:description" content="crnbrdrck's Netsoc Homepage - Techtalks and other stuff too maybe" />
+        <meta name="twitter:description" content="crnbrdrck's netsoc homepage - techtalks and other stuff too maybe" />
         <meta itemprop="image" content="http://crnlpanic.netsoc.co/demo.png" />
     </head>
     <body>
