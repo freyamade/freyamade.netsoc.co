@@ -36,7 +36,7 @@ print("""
         <link href="style.css" type="text/css" rel="stylesheet" />
         <meta property="og:title" content="crnlpanic" />
         <meta property="og:url" content="http://%(http_host)s%(request_uri)s" />
-        <meta property="og:image" content="http://netsoc.co/rk/wp-content/uploads/2015/10/generic-og.png" />
+        <meta property="og:image" content="http://crnlpanic.netsoc.co/demo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="crnlpanic.netsoc.co" />
@@ -45,7 +45,7 @@ print("""
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@crnbrdrck" />
         <meta name="twitter:description" content="crnbrdrck's Netsoc Homepage - Techtalks and other stuff too maybe" />
-        <meta itemprop="image" content="http://netsoc.co/rk/wp-content/uploads/2015/10/generic-og.png" />
+        <meta itemprop="image" content="http://crnlpanic.netsoc.co/demo.png" />
     </head>
     <body>
         <div class="container">
