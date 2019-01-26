@@ -30,10 +30,12 @@ for name in sorted(os.listdir('techtalks')):
 # Response Body
 print("""
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>crnlpanic - techtalks and other stuff maybe</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="author" content="crnbrdrck" />
+        <meta name="description" content="crnlpanic is the home of crnbrdrck's netsoc techtalks" />
         <link href="//fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet" type="text/css">
         <link href="style.css" type="text/css" rel="stylesheet" />
         <meta property="og:title" content="crnlpanic" />
