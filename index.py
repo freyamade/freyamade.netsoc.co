@@ -32,24 +32,24 @@ print("""
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>crnlpanic - techtalks and other stuff maybe</title>
+        <title>freyamade some techtalks</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta name="author" content="crnbrdrck" />
-        <meta name="description" content="crnlpanic is the home of crnbrdrck's netsoc techtalks" />
+        <meta name="author" content="freyamade" />
+        <meta name="description" content="freyamade some techtalks for netsoc and they're pretty cool" />
         <link href="//fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet" type="text/css">
         <link href="style.css" type="text/css" rel="stylesheet" />
-        <meta property="og:title" content="crnlpanic" />
+        <meta property="og:title" content="freyamade" />
         <meta property="og:url" content="http://%(http_host)s%(request_uri)s" />
-        <meta property="og:image" content="http://crnlpanic.netsoc.co/demo.png" />
+        <meta property="og:image" content="http://freyamade.netsoc.co/demo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="crnlpanic.netsoc.co" />
+        <meta property="og:site_name" content="freyamade.netsoc.co" />
         <meta property="fb:admins" content="1385961037" />
-        <meta property="og:description" content="crnbrdrck's netsoc homepage - techtalks and other stuff too maybe" />
+        <meta property="og:description" content="freyamade a netsoc homepage" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@crnbrdrck" />
-        <meta name="twitter:description" content="crnbrdrck's netsoc homepage - techtalks and other stuff too maybe" />
-        <meta itemprop="image" content="http://crnlpanic.netsoc.co/demo.png" />
+        <meta name="twitter:site" content="@freyamade" />
+        <meta name="twitter:description" content="freyamade a netsoc homepage" />
+        <meta itemprop="image" content="http://freyamade.netsoc.co/demo.png" />
     </head>
     <body>
         <div class="container">
@@ -59,7 +59,7 @@ print("""
                     %(cards)s
                 </div>
             </div>
-            <a href="https://github.com/crnbrdrck/" class="social-link" target="blank">my github</a>
+            <a href="https://github.com/freyamade/" class="social-link" target="blank">my github</a>
         </div>
     </body>
 </html>

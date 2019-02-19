@@ -6,8 +6,8 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    color: #d4def6;
-    background-color: #002366;
+    color: white;
+    background-color: #18191c;
     display: table;
     font-weight: 200;
     font-family: 'Montserrat';
@@ -20,9 +20,12 @@ body {
 }
 
 .social-link {
-    color: #d4def6;
-    text-decoration: underline solid #0046cc;
+    color: white;
     position: absolute;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #0046cc, #ff206e);
+    border-image-slice: 1;
+    text-decoration: none;
     top: 1%;
     right: 1%;
 }
@@ -35,6 +38,10 @@ body {
     font-size: 96px;
     margin-bottom: 40px;
     margin-top: 40px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #0046cc, #ff206e);
+    border-image-slice: 1;
+    display: inline-block;
 }
 
 .quote {
@@ -52,13 +59,13 @@ body {
     margin: 1% 0;
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #00256e;
+    background-color: #1d1e22;
     text-decoration: none;
-    color: #d4def6;
+    color: white;
 }
 
 .card:hover {
-    background-color: #002876;
+    background-color: #212226;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
 }
 
