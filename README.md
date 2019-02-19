@@ -1,7 +1,7 @@
-# crnlpanic.netsoc.co
-crnlpanic.netsoc.co homepage and techtalks and other stuff
+# freyamade.netsoc.co
+freyamade.netsoc.co homepage and techtalks and other stuff
 
-![demo image](https://raw.githubusercontent.com/crnbrdrck/crnlpanic.netsoc.co/master/demo.png?token=APL_mWJ_nXwuK0nxZdRcbPwpbirQyYehks5cSEo4wA%3D%3D)
+![demo image](https://raw.githubusercontent.com/freyamade/freyamade.netsoc.co/master/demo.png?token=APL_mWJ_nXwuK0nxZdRcbPwpbirQyYehks5cSEo4wA%3D%3D)
 
 ## Adding talks
 The index.py script automatically detects any techtalks in the `techtalks` directory and displays them, assuming the following;
