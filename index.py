@@ -38,6 +38,7 @@ print("""
         <meta name="description" content="freyamade some techtalks for netsoc and they're pretty cool" />
         <link href="//fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet" type="text/css">
         <link href="style.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/png" href="https://avatars0.githubusercontent.com/u/15925145?s=16&v=4" />
         <meta property="og:title" content="freyamade" />
         <meta property="og:url" content="http://%(http_host)s%(request_uri)s" />
         <meta property="og:image" content="http://freyamade.netsoc.co/demo.png" />
